@@ -21,27 +21,22 @@ LLM as a judge와 golden set 도입 시 개선사항
 
 ## 1. 찾아본 자료 
 
-[Google Stax](https://stax.withgoogle.com/landing/)
-[LLM as a Judge](https://arxiv.org/abs/2411.15594)
-[LLM evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook#what-is-model-evaluation-about)
-[Quantifying Biases in LLM-as-a-Judge](https://arxiv.org/abs/2410.02736)
-[TurnWise](https://arxiv.org/html/2603.16759v1)
-
-논문 리뷰는 Notion에 작성하였습니다.
+- [Google Stax](https://stax.withgoogle.com/landing/)
+- [LLM as a Judge](https://arxiv.org/abs/2411.15594)
+- [LLM evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook#what-is-model-evaluation-about)
+- [Quantifying Biases in LLM-as-a-Judge](https://arxiv.org/abs/2410.02736)
+- [TurnWise](https://arxiv.org/html/2603.16759v1)
+- [Judging the Judges](https://arxiv.org/pdf/2406.12624)
 
 ## 2. 수치 검증
-
-Notion에 작성하였습니다.
 
 ## 3. 결론
 
 > Metric을 지속 관리하고 품질을 유지한다.
-
-Notion에 작성하였습니다.
 
 ## 4. 국내 도입 사례
 
 [1](https://tech.kakao.com/posts/690)
 [2](https://hyperconnect.github.io/2026/04/22/llm-as-a-judge-for-explanation-quality.html)
 [3](https://ai.kakaobank.com/14b0bbc2-6fb5-801c-a2bd-c6e8b9a28e24)
-[4.루브릭 관리](https://learn.microsoft.com/ko-kr/microsoft-copilot-studio/guidance/kit-rubrics-manage)
+[4](https://learn.microsoft.com/ko-kr/microsoft-copilot-studio/guidance/kit-rubrics-manage)
