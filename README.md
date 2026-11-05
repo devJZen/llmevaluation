@@ -35,8 +35,6 @@ Deep Eval과 기존 RaGas 평가 지표 비교 분석 (11/5 ~)
 
 ## 3. 결론
 
-> Metric을 지속 관리하고 품질을 유지한다.
-
 ## 4. 국내 도입 사례
 
 [1](https://tech.kakao.com/posts/690)
