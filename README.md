@@ -27,10 +27,11 @@ LLM as a judge와 Golden Set 도입 시 개선사항
 - [Quantifying Biases in LLM-as-a-Judge](https://arxiv.org/abs/2410.02736)
 - [TurnWise](https://arxiv.org/html/2603.16759v1)
 - [Judging the Judges](https://arxiv.org/pdf/2406.12624)
+- [RAG 도입 시 겪었던 같은 문제에 대한 토론](https://www.reddit.com/r/AI_Agents/comments/1nbrm95/building_rag_systems_at_enterprise_scale_20k_docs/)
 
 ## 2. 수치 검증
 
-예제로 대체 합니다.
+Deep Eval과 기존 RaGas 평가 지표 비교 분석 (11/5 ~)
 
 ## 3. 결론
 
