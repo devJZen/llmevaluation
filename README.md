@@ -31,7 +31,8 @@ LLM as a judge와 Golden Set 도입 시 개선사항
 
 ## 2. 수치 검증
 
-Deep Eval과 기존 RaGas 평가 지표 비교 분석 (11/5 ~)
+Deep Eval
+RaGas는 상황에 따라서 쓰는 것이 맞다고 판단. 둘 다 필요하다. PT로 확인한다.
 
 ## 3. 결론
 
