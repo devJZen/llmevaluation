@@ -2,9 +2,13 @@
 
 본 저장소는 LLM 답변의 rubric을 연구를 위해 작성되었습니다.
 
+NLP 평가 도입 시 개선사항
+- 정답에 가까운 예측을 할 수 있게 조정할 수 있습니다.
+- llm 튜닝, AI 서빙 시에 데이터 관리 정책과 거버넌스를 도입 후에 품질이 개선되었습니다.
+
 LLM as a judge와 Golden Set 도입 시 개선사항
 - 평가 항목이 주관적인 경우에는 검수자의 주견에 따라 의견이 달랐습니다.
-- 답변의 일관성은 Text2SQL 적용 시에 데이터 또는 원장(ledger)의 복잡도와 상관없이 RAG가 해결되면 정확도는 높았습니다.
+- 답변의 일관성은 Text2SQL(또는 TextToSQL) 적용 시에 데이터 또는 원장(ledger)의 복잡도와 상관없이 RAG가 해결되면 정확도는 높았습니다.
 - 랜덤한 답변을 줄 수 밖에 없는 경우에는 실무자를 위주로 맞춤화하는 것이 옳은 방향성인지에 대해서는 충분한 토론이 필요합니다.
 - 싱글턴과 멀티턴 모두 평가를 자동화 할 수 있었습니다.(적용하지 않음)
 - 평가 기준이 휴먼 에러 또는 집단의 확증편향에서 자유로운지 검토해야 됩니다.
@@ -20,7 +24,7 @@ LLM as a judge와 Golden Set 도입 시 개선사항
 4. 국내 도입 사례
 
 ## 1. 찾아본 자료 
-
+평가 프레임워크
 - [Google Stax](https://stax.withgoogle.com/landing/)
 - [LLM as a Judge](https://arxiv.org/abs/2411.15594)
 - [LLM evaluation Guidebook](https://huggingface.co/spaces/OpenEvals/evaluation-guidebook#what-is-model-evaluation-about)
@@ -28,13 +32,19 @@ LLM as a judge와 Golden Set 도입 시 개선사항
 - [TurnWise](https://arxiv.org/html/2603.16759v1)
 - [Judging the Judges](https://arxiv.org/pdf/2406.12624)
 - [RAG 도입 시 겪었던 같은 문제에 대한 토론](https://www.reddit.com/r/AI_Agents/comments/1nbrm95/building_rag_systems_at_enterprise_scale_20k_docs/)
+NLP 관련
+- [BLEU](https://www.nltk.org/api/nltk.translate.html#nltk.translate.bleu_score.sentence_bleu)
+- [BERTScore](https://github.com/Tiiiger/bert_score)
+- [RougeScore](https://github.com/google-research/google-research/tree/master/rouge)
+- [코사인 유사도](https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/custom/cosine_similarity.ipynb)
 
 ## 2. 수치 검증
 
-Deep Eval
-RaGas는 상황에 따라서 쓰는 것이 맞다고 판단. 둘 다 필요하다. PT로 확인한다.
+신규 문서로 갈음
 
 ## 3. 결론
+
+무엇을 사용하든 평가 항목을 관리하는 포인트가 더 중요합니다.
 
 ## 4. 국내 도입 사례
 
@@ -42,3 +52,4 @@ RaGas는 상황에 따라서 쓰는 것이 맞다고 판단. 둘 다 필요하�
 [2](https://hyperconnect.github.io/2026/04/22/llm-as-a-judge-for-explanation-quality.html)
 [3](https://ai.kakaobank.com/14b0bbc2-6fb5-801c-a2bd-c6e8b9a28e24)
 [4](https://learn.microsoft.com/ko-kr/microsoft-copilot-studio/guidance/kit-rubrics-manage)
+[5](https://aws.amazon.com/ko/blogs/tech/daangnpay-text-to-sql-2/)
